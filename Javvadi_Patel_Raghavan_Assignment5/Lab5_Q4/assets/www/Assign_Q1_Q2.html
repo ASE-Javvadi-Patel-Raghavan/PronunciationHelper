@@ -1,0 +1,130 @@
+
+<!DOCTYPE html> 
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <title>Single page template</title> 
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css" /> 
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js"></script>
+
+</head> 
+
+<body> 
+
+<div data-role="page" id="page1">
+
+     <div data-role="header">
+          <h1>Accent Correction Software</h1>
+     </div>
+	<div data-role="content" id="menu" style="background-color:#FFD700;height:845px;width:500px;float:left;">
+		<b><p>Menu</p></b>
+		<br><p><a href="#ButtonEventPage_login" data-role="button">Login</a></p>
+		<br>
+<p><a href="#ButtonEventPage_Regis" data-role="button">Registration</a></p>
+		<br>
+<p><a href="#popupVideo" data-role="button">Video Player</a></p>
+		<br>
+<p><a href="#ButtonEventPage_Members" data-role="button">Project Members</a></p>
+		<br><a  href="#popupMenu" data-rel="popup"  data-role="button">Group Selection Popup</a>
+	<div data-role="popup" id="popupMenu" data-theme="a">
+	        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		<li data-role="divider" data-theme="a">languages</li>
+		<li><a href="">Chineese</a></li>
+		<li><a href="">French</a></li>
+		<li><a href="">German</a></li>
+		</ul>
+       </div>
+		<br><font size="3" color="red">Tutorials:</font> 
+		<fieldset data-role="controlgroup">
+		<legend>Choose one:</legend>
+     		<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+     		<label for="radio-choice-1">AUDIO</label>
+		<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+     		<label for="radio-choice-2">VIDEO</label>
+		</fieldset>
+	</div>
+
+
+	<div id="content" style="background-color:#EEEEEE;height:20px;width:750px;float:left;">Welecome to Accent Correction Software</div>
+	<div><img border="0" src="../../res/drawable-hdpi/capture.jpg" alt="accent pic" width="750" height="852"></div>
+	
+</div>
+<div data-role="page" id="ButtonEventPage_login">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Login Page</h1>
+     </div>
+
+     <div data-role="content">     
+          <p>Enter Login Details</p>
+		<font size="3" color="red">Username:</font> 
+		<input type="text" name="name" id="basic" value=""  />
+		<font size="3" color="red">Password:</font> 
+		<input type="text" name="name" id="basic" value=""  /><br>
+        
+     <fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+	<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>	   
+     </fieldset>
+     </div>
+</div>
+
+<div data-role="page" id="ButtonEventPage_Regis">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Registration Page</h1>
+     </div>
+
+     <div data-role="content">     
+          <p>Enter Details for Registration</p>
+		<font size="3" color="red">Username:</font> 
+		<input type="text" name="name" id="basic" value=""  />
+		<font size="3" color="red">Password:</font> 
+		<input type="text" name="name" id="basic" value=""  /><br>
+		<font size="3" color="red">Email Id:</font> 
+		<input type="text" name="name" id="basic" value=""  /><br>
+		<font size="3" color="red">Phone Num:</font> 
+		<input type="text" name="name" id="basic" value=""  /><br>
+        
+     <fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+	<div class="ui-block-b"><button type="submit" data-theme="b">Register</button></div>	   
+     </fieldset>
+     </div>
+</div>
+
+
+<div data-role="page" id="ButtonEventPage_Members">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Project Members</h1>
+     </div>
+
+     <div data-role="content">     
+          <p>Enter one project member name:</p>
+		<font size="3" color="red">Username:</font> 
+		<input type="text" name="name" id="basic" value=""  /></br>
+    	<div data-role="content"><button type="submit" data-theme="b">Submit</button></div>	   
+      </div>
+</div>
+
+<div data-role="page" id="popupVideo">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Video</h1>
+     </div>
+
+     <div data-role="content">  
+<a href="#popupVideo" data-rel="popup" data-role="button" data-theme="b" >Launch video player</a>
+<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+<iframe src="http://player.vimeo.com/video/41135183?portrait=0" width="497" height="298" seamless></iframe>
+</div>
+
+ 
